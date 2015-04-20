@@ -4,7 +4,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   
  def setup
     ActionMailer::Base.deliveries.clear
-  end
+ end
 
   test "invalid signup information" do
     get signup_path
@@ -19,10 +19,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_select 'div.field_with_errors'
   end
 
-  test "valid signup information with account activation" do
+  test "valid signup information " do  #with account activation
     get signup_path
     assert_difference 'User.count', 1 do
-      post users_path, user: { name:  "Example User",
+      post_via_redirect users_path , user: { name:  "Example User",     #users_path
                                email: "user@example.com",
                                password:              "password",
                                password_confirmation: "password" }
