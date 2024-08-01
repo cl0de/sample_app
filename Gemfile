@@ -11,7 +11,7 @@ gem 'fog',                     '1.23.0'
 
 gem 'will_paginate',  '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
-gem 'bootstrap-sass',  '3.2.0.0'
+gem 'bootstrap-sass',  '3.4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.1'
 # Use Uglifier as compressor for JavaScript assets
